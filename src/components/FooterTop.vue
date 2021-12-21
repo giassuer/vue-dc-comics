@@ -2,7 +2,7 @@
     <div class="foter-top-container">
         <div class="foter-top-menu">
             <div v-for="(element, index) in footerTopContent" :key="index" class="footer-top-contant">
-                <div class="footer-top-img"><img :src="'../assets/img/buy-comics-' + element.url + '.png'" alt=""><span class="footer-top-text">{{element.text}}</span></div>
+                <div class="footer-top-img"><img :src="require('../assets/img/buy-comics-' + element.url + '.png')" alt=""><span class="footer-top-text">{{element.text}}</span></div>
             </div>
             
         </div>
