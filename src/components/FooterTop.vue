@@ -2,7 +2,7 @@
     <div class="foter-top-container">
         <div class="foter-top-menu">
             <div v-for="(element, index) in footerTopContent" :key="index" class="footer-top-contant">
-                <div class="footer-top-img"><img :src="element.url" alt=""><span class="footer-top-text">{{element.text}}</span></div>
+                <div class="footer-top-img"><img :src="'../assets/img/buy-comics-' + element.url + '.png'" alt=""><span class="footer-top-text">{{element.text}}</span></div>
             </div>
             
         </div>
@@ -18,27 +18,27 @@ export default {
             footerTopContent: [
                 {
                     text: 'DIGITAL COMICS',
-                    url: '../assets/img/buy-comics-digital-comics.png',
+                    url: 'digital-comics',
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    url: '../assets/img/buy-buy-comics-merchandise.png',
+                    url: 'merchandise',
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    url: '../assets/img/buy-comics-subscriptions.png',
+                    url: 'subscriptions',
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
-                    url: '../assets/img/buy-comics-shop-locator.png',
+                    url: 'shop-locator',
                 },
                 {
                     text: 'DC POWER VISA',
-                    url: '../assets/img/buy-comics-shop-locator.png',
+                    url: 'shop-locator',
                 },
                 {
                     text: 'COLLECTIBLES',
-                    url: '../assets/img/buy-comics-shop-locator.png',
+                    url: 'shop-locator',
                 },
                
             ],

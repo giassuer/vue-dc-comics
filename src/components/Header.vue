@@ -3,7 +3,7 @@
         <div class="header-logo"><img src="../assets/img/dc-logo.png" alt=""></div>
         <div class="header-menu">
             <ul class="menu-list">
-                <li v-for="(element, index) in links" :key="index">
+                <li v-for="(element, index) in links" :key="index" :class="{'current': element.current}">
                     <a href="">{{element.text}}</a>
                 </li>
                 
@@ -97,12 +97,13 @@ export default {
 }
 
 .header-menu{  
-    height: 100%;
+    height: 100px;
     float: right;
 }
 
 .menu-list{
     display: flex;
+    height: 100%;
     
 }
 
@@ -110,6 +111,16 @@ li{
     line-height: 100px;
     margin: 0px 10px;
     font-size: 12px;
+    height: calc(100% - 1px);
+}
+
+a{
+    height: 100px;
+    color: black;
+}
+
+.current{
+    border-bottom: 2px solid #0282f9;
 }
 
 </style>
